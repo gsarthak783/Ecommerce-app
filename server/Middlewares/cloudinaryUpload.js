@@ -13,9 +13,9 @@ if(!fs.existsSync("./uploads")){
 
 //cloudinary configuration
 cloudinary.config({
-    cloud_name:'dhjzqcuoz',
-    api_key:332291463214449,
-    api_secret:'oO6hjc1H1JqnIHgiqjfX4ctGCgU'
+    cloud_name:process.env.CLOUD_NAME,
+    api_key:process.env.API_KEY,
+    api_secret:process.env.API_SECRET
 })
 
 
